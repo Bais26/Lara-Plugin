@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Tambah Siswa</title>
+    @vite('resources/css/app.css')
 </head>
 <body>
     <h1>Tambah Siswa</h1>

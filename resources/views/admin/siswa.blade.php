@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    @vite('resources/css/app.css')
     <title>Data Siswa</title>
 </head>
 <body>
     <h1>Data Siswa</h1>
 
     @if(session('success'))
-        <p style="color: green;">{{ session('success') }}</p>
+        <p >{{ session('success') }}</p>
     @endif
 
-    <a href="{{ route('siswa.create') }}">Tambah Siswa</a>
+    <a class="p-4 mb-12 " href="{{ route('siswa.create') }}">Tambah Siswa</a>
 
-    <table border="1" cellpadding="10" cellspacing="0">
+    <table cellpadding="10" cellspacing="0">
         <thead>
             <tr>
                 <th>No</th>
